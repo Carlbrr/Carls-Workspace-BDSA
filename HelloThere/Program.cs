@@ -6,6 +6,14 @@ namespace HelloThere
     {
         public static void Main(string []args)
         {
+            Console.WriteLine("Please enter a year and press the Enter key: ");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if(isLeapYear(year)){
+                Console.WriteLine("yay");
+            }else{
+                Console.WriteLine("nay");
+            }
+
         }
         public static bool isLeapYear(int year)
         {
